@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Code Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>👨‍💻 Beginner Code Helper</h1>
+            <p>Helping you understand coding errors simply, without just giving you the answer!</p>
+        </header>
+
+        <main>
+            <form id="error-form">
+                <label for="code-snippet">Your Code Snippet:</label>
+                <textarea id="code-snippet" placeholder="Paste your buggy code here..." required></textarea>
+
+                <label for="error-message">The Error Message:</label>
+                <textarea id="error-message" placeholder="Paste the exact error message or traceback..."
+                    required></textarea>
+
+                <button type="submit" id="submit-btn">Analyze Error</button>
+            </form>
+
+            <section id="results" class="hidden">
+                <h2>What's going wrong? 🤔</h2>
+                <div id="explanation-box" class="box output-box"></div>
+
+                <h2>Here is a hint! 💡</h2>
+                <div id="hint-box" class="box output-box"></div>
+            </section>
+
+            <div id="loading" class="hidden">
+                <p>Thinking and analyzing your code... 🧠</p>
+            </div>
+
+            <div id="error-box" class="hidden error-alert"></div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
